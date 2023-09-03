@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2%;
+    padding: 2%;
+    background-color: #f5f5f5;
+    background-image: url('miimg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container1 {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;  
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('miimg.jpg');  
+    filter: blur(10px);  
+    z-index: -1;  
+} 
+ 
+h2 {
+    text-align: center;
+    margin: 5px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; 
+    background-color: rgba(0, 0, 0, 0.5);  
+    backdrop-filter: blur(10px); 
+    padding: 10px;  
+    border-radius: 10px;  
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.addBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #400842;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fbcff4;
+    font-size: 18px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #a20000;  
+}
+
+.edit-btn {
+    background-color: #27862a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+   background-color: #45a049;
+}
+
+.close{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+ 
+.container {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    user-select: none;
+    flex-direction: column;  
+}
+ 
+.container input[type="checkbox"] {
+    margin-top: 5px; 
+    align-self: flex-start; 
+}
+ 
+
+
